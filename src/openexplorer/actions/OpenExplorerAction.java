@@ -30,15 +30,14 @@ import org.eclipse.ui.IWorkbenchWindowActionDelegate;
  * @author <a href="mailto:samson959@gmail.com">Samson Wu</a>
  * @version 1.4.0
  */
-public class OpenExplorerAction extends AbstractOpenExplorerAction implements
-        IWorkbenchWindowActionDelegate {
+public class OpenExplorerAction extends AbstractOpenExplorerAction implements IWorkbenchWindowActionDelegate {
 
-    public void init(IWorkbenchWindow window) {
-        this.window = window;
-        this.shell = this.window.getShell();
-    }
+	public void init(IWorkbenchWindow window) {
+		this.window = window;
+		this.shell = this.window.getShell();
+	}
 
-    public void dispose() {
-    }
+	public void dispose() {
+	}
 
 }

@@ -135,7 +135,8 @@ public abstract class AbstractOpenExplorerAction implements IActionDelegate,
 	protected void openInBrowser(String browser, String location) {
 		try {
 			if (OperatingSystem.INSTANCE.isWindows()) {
-				Runtime.getRuntime().exec(browser + " \"" + location + "\"");
+//				Runtime.getRuntime().exec(browser + " + location + ");
+				Runtime.getRuntime().exec("D:\\program Files (x86)\\TotalCMD64\\Totalcmd64.exe /O /P=L /L="+location+"");
 			} else {
 				Runtime.getRuntime().exec(new String[] { browser, location });
 			}
@@ -148,5 +149,13 @@ public abstract class AbstractOpenExplorerAction implements IActionDelegate,
 
 	public void selectionChanged(IAction action, ISelection selection) {
 		this.currentSelection = selection;
+	}
+	
+	public static void main(String[] args) {
+		try {
+			Runtime.getRuntime().exec("D:\\program Files (x86)\\TotalCMD64\\Totalcmd64.exe /O /P=L /L=E:\\homework\\OpenExplorer\\src\\openexplorer\\actions");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }

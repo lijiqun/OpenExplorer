@@ -29,7 +29,8 @@ package openexplorer.util;
  */
 public interface IFileManagerExecutables {
 	public static final String FINDER = "open"; 
-	public static final String EXPLORER = "explorer"; 
+//	public static final String EXPLORER = "explorer"; 
+	public static final String EXPLORER = "D:\\program Files (x86)\\TotalCMD64\\Totalcmd64.exe /O /P=L /L="; 
 	public static final String NAUTILUS = "nautilus";
 	public static final String DOLPHIN = "dolphin";
 	public static final String THUNAR = "thunar";
